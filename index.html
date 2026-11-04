@@ -556,6 +556,7 @@ html.reveal-ready .reveal.is-visible{opacity:1; transform:none}
   var guestsWrap = document.getElementById('guestsWrap');
   var form = document.getElementById('rs'), msg = document.getElementById('rs-msg');
   var send = document.getElementById('rs-send');
+  if (!yes || !no || !guestsWrap || !form || !msg || !send) return;
   function pick(v) {
     attending = v;
     yes.setAttribute('aria-pressed', v === 'yes');
